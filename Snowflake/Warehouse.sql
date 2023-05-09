@@ -1,5 +1,8 @@
--- a store procedure is created in order to resize the warehouse and optimize the resources
 
+-- set timeout to the warehouse
+ALTER WAREHOUSE SET STATEMENT_TIMEOUT_IN_SECONDS = 3600;
+
+-- store procedure is created in order to resize the warehouse and optimize the resources
 CREATE OR REPLACE PROCEDURE SP_RESIZE_WH("WH_NAME" VARCHAR(16777216), "NEW_SIZE" VARCHAR(16777216), "MAX_CLUSTERS" VARCHAR(16777216), "MIN_CLUSTERS" VARCHAR(16777216), "SCALING_POLICY" VARCHAR(16777216))
 RETURNS VARCHAR(16777216)
 LANGUAGE JAVASCRIPT

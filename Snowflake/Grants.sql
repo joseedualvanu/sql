@@ -14,7 +14,6 @@ GRANT SELECT ON FUTURE TABLES IN SCHEMA <schema_name> to role <role_name>;
 
 -- Table
 GRANT SELECT ON TABLE <table_name> to role <role_name>;
-GRANT SELECT ON ALL VIEWS "MSTRDB"."TIA" to role SYSADMIN;
 
 -- Grants of role
-SHOW GRANTS TO ROLE SOLO_LECTURA;
+SHOW GRANTS TO ROLE <role_name>;

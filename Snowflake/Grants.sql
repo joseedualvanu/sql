@@ -17,3 +17,6 @@ GRANT SELECT ON TABLE <table_name> to role <role_name>;
 
 -- Grants of role
 SHOW GRANTS TO ROLE <role_name>;
+
+-- Grant ownership of object
+GRANT OWNERSHIP ON <object> TO <role_name> REVOKE CURRENT GRANTS;

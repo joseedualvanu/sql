@@ -2,6 +2,7 @@
 SELECT COUNT(*)
 FROM <table_name>
 WHERE tiem_dia_id >= trunc(sysdate) -1;
+WHERE tiem_dia_id >= to_date('01/04/2023','dd/mm/yyyy');
 
 -- first rows
 SELECT *
